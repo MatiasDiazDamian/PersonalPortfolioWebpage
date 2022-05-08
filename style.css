@@ -79,10 +79,15 @@ section > p{
     padding: 8rem 2rem;
     background-color: var(--main-blue);
 }
+#projects h2{
+    padding-bottom: 15px;
+    border-bottom: 3px solid white;
+    margin-bottom: 4rem;
+}
 .project-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 3rem;
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -93,24 +98,30 @@ section > p{
     text-decoration: none;
     color: white;
 }
-#projects a{
-    
-}
-section .project{
+
+section .project,
+section > a{
     background-color: var(--secundary-blue);
     box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
     border-radius: 5px;
 }
 .img-project{
-    height: 50rem;
-    width: 50rem;
+    height: 87%;
+    width: 100%;
     object-fit: cover;
+    margin: 0 auto;
+    border-radius: 5px;
 }
-iframe{
+img{
     display: block;
 }
 
-
+.btn{
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+}
 
 
 #contact{
@@ -155,7 +166,8 @@ border-radius: 5px;
 box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .3);
 transition: .1s;
 }
-.contact-icon a:hover {
+.contact-icon a:hover,
+.project-container a:hover {
     transform: translateY(-3px) scale(1.05);
 }
 .contact-icon .github:hover{
@@ -195,4 +207,14 @@ footer a{
     font-size: 3.5rem;
     border: 1px solid white;
     border-radius: 5px;     
+}
+
+@media (min-width: 699px){
+    .title-contact h2, 
+    #projects h2 {
+        font-size: 5rem;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
