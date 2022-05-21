@@ -115,6 +115,11 @@ section > a{
 img{
     display: block;
 }
+.project-title{
+    font-weight: 700;
+    height: 5rem;
+    margin-top: 2rem;
+}
 
 .btn{
     font-size: 2rem;
